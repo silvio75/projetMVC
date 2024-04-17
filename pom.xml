@@ -16,6 +16,21 @@
     </dependency>
   </dependencies>
   <build>
-    <finalName>jenkins</finalName>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                      <version>3.3.1</version
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>org.exemple.demo.App</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
   </build>
 </project>
